@@ -86,14 +86,17 @@ create table score(
                       score int comment '成绩',
                       primary key (sid,cid)
 )engine = InnoDB;;
-insert into score(sid,cid,score)values (1,112,89);
+insert into score(sid,cid,score)values (1,1,89);
 
 CREATE VIEW score_view as
-select st.name student_name,co.name course_name,sc.score
-from student st join score sc on st.id=sc.sid
-                join course co on sc.cid=co.id
-where st.name='Jack' and co.name='mysql';
-select * from score_view;
+select st.name student_name, co.name course_name, sc.score
+from student st
+         join score sc on st.id = sc.sid
+         join course co on sc.cid = co.id
+# where st.name = 'Jack'
+#   and co.name = 'MySQL';
+select *
+from score_view;
 
 # 事务回滚，事务控制
 set autocommit =0;
