@@ -92,7 +92,7 @@ CREATE VIEW score_view as
 select st.name student_name, co.name course_name, sc.score
 from student st
          join score sc on st.id = sc.sid
-         join course co on sc.cid = co.id
+         join course co on sc.cid = co.id;
 # where st.name = 'Jack'
 #   and co.name = 'MySQL';
 select *
