@@ -4,6 +4,8 @@ import java.util.*;
 import java.util.stream.Stream;
 
 /**
+ * 遍历Map集合方式
+ *
  * @author sytsnb@gmail.com
  * @date 2022 2022/10/14 20:20
  */
