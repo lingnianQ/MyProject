@@ -1,8 +1,12 @@
-server:
-  port: 9999
 spring:
-  datasource:
-    username: root
-    password: root
-    url: jdbc:mysql://127.0.0.1:3306/mall_ams?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-    driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: dev
+  jackson:
+    default-property-inclusion: non_null
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package:
+
+knife4j:
+  enable: true
