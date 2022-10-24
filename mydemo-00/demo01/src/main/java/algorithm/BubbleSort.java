@@ -29,6 +29,7 @@ public class BubbleSort {
                     last = j;
                 }
             }
+            //最后一次交换位置索引
             n = last;
             System.out.println("第" + "轮冒泡:" + Arrays.toString(arr));
         } while (n != 0);
