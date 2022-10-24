@@ -9,6 +9,8 @@ import java.util.List;
  */
 public class ArrayListDemo1 {
     public static void main(String[] args) {
+
+//        private static final int DEFAULT_CAPACITY = 10;
         ArrayList<Integer> list = new ArrayList<>();
         //.add()扩容机制,  1.5倍
         list.add(1);
