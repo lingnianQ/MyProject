@@ -12,7 +12,7 @@ public class ArrayListDemo1 {
 
 //        private static final int DEFAULT_CAPACITY = 10;
         ArrayList<Integer> list = new ArrayList<>();
-        //.add()扩容机制,  1.5倍
+        //.add()扩容机制, 首次扩容为10, 再次扩容为上次容量的1.5倍
         list.add(1);
         list.add(2);
         //.addAll扩容机制,  1.5倍容量与实际容量选择较大值
