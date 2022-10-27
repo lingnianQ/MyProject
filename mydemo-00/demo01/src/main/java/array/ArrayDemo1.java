@@ -24,6 +24,13 @@ public class ArrayDemo1 {
 
         System.out.println("----------");
         //遍历
+        for (int[] ints : arr) {
+            for (int anInt : ints) {
+                System.out.print(anInt);
+            }
+            System.out.println();
+        }
+        System.out.println("----------");
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 System.out.print(arr[i][j]);
