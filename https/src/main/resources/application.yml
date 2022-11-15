@@ -1,0 +1,11 @@
+
+server:
+  # 服务器的HTTP端口，默认为8080
+  port: 443
+  ssl:
+    #文件所在位置
+    key-store: classpath:tomcat.keystore
+    #keystore的密码
+    key-store-password: password123
+    key-store-type: JKS
+    key-alias: tomcat
