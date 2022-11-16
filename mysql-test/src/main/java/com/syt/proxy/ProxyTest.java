@@ -28,8 +28,7 @@ public class ProxyTest {
         ClassLoader classLoader = clazz.getClassLoader();
         Class[] interfaces = {clazz};
         MapperProxy mapperProxy = new MapperProxy();
-        Object proxyObject = Proxy.newProxyInstance(classLoader, interfaces, mapperProxy);
-        return proxyObject;
+        return Proxy.newProxyInstance(classLoader, interfaces, mapperProxy);
     }
 
     static class MapperProxy implements InvocationHandler {
