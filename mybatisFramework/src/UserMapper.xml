@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<select id="com.UserMapper.findAll"
+<select id="com.UserMapper.selectAll"
 resultType="com.User">
     select * from user
 </select>
